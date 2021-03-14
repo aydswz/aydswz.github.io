@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ubuntu_java8_openjfx8</title>
+    <url>/2021/03/14/ubuntu-java8-openjfx8/</url>
+    <content><![CDATA[<h3 id="采用Ubuntu旧源，降级下载openjfx"><a href="#采用Ubuntu旧源，降级下载openjfx" class="headerlink" title="采用Ubuntu旧源，降级下载openjfx"></a>采用Ubuntu旧源，降级下载openjfx</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo add-apt-repository <span class="string">&quot;deb https://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse&quot;</span></span><br><span class="line"></span><br><span class="line">sudo add-apt-repository <span class="string">&quot;deb https://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse&quot;</span></span><br><span class="line"></span><br><span class="line">sudo add-apt-repository <span class="string">&quot;deb https://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装openjfx8"><a href="#安装openjfx8" class="headerlink" title="安装openjfx8"></a>安装openjfx8</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install openjfx=8u161-b12-1ubuntu2 libopenjfx-java=8u161-b12-1ubuntu2 libopenjfx-jni=8u161-b12-1ubuntu2</span><br></pre></td></tr></table></figure>
+<h3 id="锁定8版本，防止升级时升到jfx11"><a href="#锁定8版本，防止升级时升到jfx11" class="headerlink" title="锁定8版本，防止升级时升到jfx11"></a>锁定8版本，防止升级时升到jfx11</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-mark hold openjfx libopenjfx-java libopenjfx-jni</span><br></pre></td></tr></table></figure>
+<h3 id="修改java版本"><a href="#修改java版本" class="headerlink" title="修改java版本"></a>修改java版本</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo update-alternatives --config java</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>java8_openjfx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>英语第一天</title>
     <url>/2021/03/05/%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
     <content><![CDATA[<h3 id="Your-genetics-influence-how-resilient-you-are-to-the-cold"><a href="#Your-genetics-influence-how-resilient-you-are-to-the-cold" class="headerlink" title="Your genetics influence how resilient you are to the cold"></a>Your genetics influence how resilient you are to the cold</h3><p>What makes some people more likely to shiver than others?</p>
@@ -25,22 +41,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/03/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>英语第二天</title>
+    <url>/2021/03/06/%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
+    <content><![CDATA[<p>Around one in five people lack a muscle protein called alpha-actinin-3 due to a single genetic change in the ACTN3 gene. The absence of alpha-actinin-3 became more common as some modern humans migrated out of Africa and into the colder climates of Europe and Asia. The reasons for this increase have remained unknown until now.</p>
+<p>Our recent study, conducted alongside researchers from Lithuania, Sweden and Australia, suggests that if you’re alpha-actinin-3 deficient, then your body can maintain a higher core temperature and you shiver less when exposed to cold, compared with those who have alpha-actinin-3.</p>
+<p>大约五分之一的人缺少一种名为 alphs-actinin-3 的肌肉蛋白，在 ACTN3 上引起遗传学的改变。alphs-actinin-3 的缺乏随着现代人类走出非洲进入气候更冷的欧洲和亚洲变得普遍。这种现象增加的原因至今未知。</p>
+<p>我们与来自 Lithuania 的研究员 Sweden 和 Australia 的最近的研究表明，如果你的 alphs-actinin-3 不足，那么你的身体可以维持更高的核心温度，并且与那些有足够的 alphs-actinin-3 的人相比，你暴露在寒冷之下时会更少打哆嗦。</p>
 ]]></content>
+      <categories>
+        <category>英语学习</category>
+      </categories>
+      <tags>
+        <tag>英语</tag>
+      </tags>
   </entry>
   <entry>
     <title>英语第三天</title>
@@ -51,21 +64,6 @@
 <p>While only 30% of participants with the alpha-actinin-3 protein reached the full 120 minutes of cold exposure, 69% of those that were alpha-actinin-3 deficient completed the full cold-water exposure time. We also assessed the amount of shivering during cold exposure periods, which told us that those without alpha-actinin-3 shiver less than those who have alpha-actinin-3.</p>
 <p><font color=blue>deficient : 缺乏</font></p>
 <p>期间只有 30% 的具有 alpha-actinin-3 蛋白的参与者暴露在寒冷中达到完整的 120 分钟，69% 的缺乏 alpha-actinin-3 蛋白的参与者则不能。我们对在暴露在寒冷中时打哆嗦的数据的分析告诉我们，没有 alpha-actinin-3 的人的哆嗦少于有 alpha-actinin-3 蛋白的人。</p>
-]]></content>
-      <categories>
-        <category>英语学习</category>
-      </categories>
-      <tags>
-        <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>英语第二天</title>
-    <url>/2021/03/06/%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
-    <content><![CDATA[<p>Around one in five people lack a muscle protein called alpha-actinin-3 due to a single genetic change in the ACTN3 gene. The absence of alpha-actinin-3 became more common as some modern humans migrated out of Africa and into the colder climates of Europe and Asia. The reasons for this increase have remained unknown until now.</p>
-<p>Our recent study, conducted alongside researchers from Lithuania, Sweden and Australia, suggests that if you’re alpha-actinin-3 deficient, then your body can maintain a higher core temperature and you shiver less when exposed to cold, compared with those who have alpha-actinin-3.</p>
-<p>大约五分之一的人缺少一种名为 alphs-actinin-3 的肌肉蛋白，在 ACTN3 上引起遗传学的改变。alphs-actinin-3 的缺乏随着现代人类走出非洲进入气候更冷的欧洲和亚洲变得普遍。这种现象增加的原因至今未知。</p>
-<p>我们与来自 Lithuania 的研究员 Sweden 和 Australia 的最近的研究表明，如果你的 alphs-actinin-3 不足，那么你的身体可以维持更高的核心温度，并且与那些有足够的 alphs-actinin-3 的人相比，你暴露在寒冷之下时会更少打哆嗦。</p>
 ]]></content>
       <categories>
         <category>英语学习</category>
